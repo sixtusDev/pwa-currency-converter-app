@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* This defines what 1rem is i.e 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.converter {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  background-color: #333;
+  height: 90%;
+  max-width: 35rem;
+  margin: 5% auto 5% auto;
+  border-radius: 1rem;
+}
+
+.converter__select-box {
+  margin: 3rem 0 3rem 0;
+}
+
+.converter__label {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+.converter__label--2 {
+  margin-right: 11rem;;
+}
+
+.converter__select {
+  display: inline-block;
+  border: none;
+  width: 50%;
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+}
+
+.converter__display-area {
+  width: 100%;
+  height: 4rem;
+  background-color: #f7f7f7;
+  margin-bottom: 2rem;
+  padding: .5rem 1rem 3rem 1rem;
+  vertical-align: middle;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.row {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.converter__input, .converter__input--equal {
+  float: left;
+  width: calc((100% - 2 * 2rem) / 3);
+  background-color: #f7f7f7;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.converter__input--equal {
+  width: 100%;
+}
+
+.converter__input:not(:last-child) {
+  margin-right: 2rem;
+}
